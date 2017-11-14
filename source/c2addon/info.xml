@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<c2addon>
+	<!-- One of: plugin, behavior, effect -->
+	<type>plugin</type>
+	
+	<name>armaldio_electron</name>	
+	<version>1.0</version>
+	<author>Armaldio</author>
+	<website>https://armaldio.xyz</website>
+	<documentation>https://armaldio.xyz</documentation>
+	<description>A short description of what this addon does.</description>
+</c2addon>
