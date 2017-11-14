@@ -1,2 +1,6 @@
 beta*
 \.idea/
+/versions
+source/c3addon
+releases
+*.bat
