@@ -231,7 +231,7 @@ AddAction(14, af_none, "Set background transparent", "Rendering", "Set game back
 
 AddComboParamOption("Catch");
 AddComboParamOption("Ignore");
-AddComboParam("State", "Whether to ignore or to catch the mouse", "Catch"); 
+AddComboParam("State", "Whether to ignore or to catch the mouse", "Catch");
 AddAction(44, af_none, "Ignore mouse clicks", "Rendering", "{0} mouse events", "Add the ability to click through the window", "ClickThrough");
 
 ////////////////////////////////////////
@@ -287,6 +287,9 @@ AddExpression(16, ef_return_any, "Get videos path", "Paths", "GetVideoPath", "Us
 AddExpression(17, ef_return_any, "Get temp path", "Paths", "GetTempPath", "Temporary folder path");
 
 AddExpression(22, ef_return_any, "The current file/folder in the loop", "Files", "CurrentFileFolder", "The current file/folder in the loop");
+AddExpression(50, ef_return_any, "The current file/folder type in the loop", "Files", "CurrentFileFolderType", "The current file/folder type in the loop");
+AddExpression(51, ef_return_any, "The current file/folder level in the loop", "Files", "CurrentFileFolderLevel", "The current file/folder level in the loop");
+
 AddExpression(40, ef_return_any, "The current file/folder in the loop opened by 'open' modal", "Files", "CurrentOpenedFileFolder", "The current file/folder in the loop opened by 'open' modal");
 AddExpression(41, ef_return_any, "The count of files/folders in a directory", "Files", "FileFolderCount", "The count of files/folders in a directory");
 AddExpression(42, ef_return_any, "The current argument", "Startup", "CurrentArg", "The current argument in the loop");
