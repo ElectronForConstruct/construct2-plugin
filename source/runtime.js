@@ -246,7 +246,6 @@ if (isElectron()) {
     type: 0 folder, 1 files, 2 files and folder
      */
     Cnds.prototype.ForEachFileFolder = function (path, type, recursive) {
-      console.log('path', path, 'type', type, 'recursive', recursive);
       if (!runningElectron)
         return;
       var self          = this;
@@ -275,10 +274,7 @@ if (isElectron()) {
 							currentFileFolderLevel = level;
 							self.doForEachTrigger(current_event);
 
-							console.log('recursive ?', recursive);
 							if (folder && recursive) {
-								console.log('walking inside');
-								console.log(self);
 								results = results.concat(walk(fullFilePath, level + 1));
 							} else {
 								results.push(file);
@@ -365,7 +361,6 @@ if (isElectron()) {
       if (!runningElectron)
         return;
       var encoding_mode_ = [ 'utf8', 'binary', 'base64' ][ encoding ];
-      console.log(encoding_mode_);
       var self = this;
       self.tag = tag;
       fs.writeFile(path, data, function (err) {
@@ -384,9 +379,7 @@ if (isElectron()) {
       if (!runningElectron)
         return;
       var encoding_mode_ = [ 'utf8', 'binary', 'base64' ][ encoding ];
-      console.log(data);
-      console.log(encoding_mode_);
-      console.log(overwrite);
+
       if (ValidFilePath(path)) {
         if (overwrite) {
           try {
@@ -558,7 +551,6 @@ if (isElectron()) {
         buttonLabel: button_label, //filters:filters,
         properties : properties.split(','),
       }, function (files) {
-        console.log(files);
         if (files.length > 0) {
           filesFolders = files;
           if (files.length === 1) {
