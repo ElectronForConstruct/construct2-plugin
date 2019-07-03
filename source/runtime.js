@@ -262,7 +262,7 @@ if (isElectron()) {
 					let exist  = false;
 					if (fs.existsSync(fullFilePath)) {
 						exist = true;
-						if (fs.lstatSync(fullFilePath).isDirectory()) {
+						if (fs.statSync(fullFilePath).isDirectory()) {
 							folder = true;
 						}
 					}
